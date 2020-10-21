@@ -13,7 +13,7 @@ module Dirigible
     end
 
     def logger
-      Logger.new('log/dirigible_ssl.log')
+      @logger ||= Logger.new('log/dirigible_ssl.log')
     end
   end
 end

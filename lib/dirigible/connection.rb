@@ -13,7 +13,7 @@ module Dirigible
     end
 
     def logger
-      @logger ||= Logger.new('log/dirigible_ssl.log')
+      @logger ||= Sidekiq::Logging.logger
     end
   end
 end
